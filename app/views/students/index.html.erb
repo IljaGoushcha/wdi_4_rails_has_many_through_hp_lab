@@ -16,6 +16,7 @@
         <td><%= student.name %></td>
         <td><%= student.age %></td>
         <td><%= student.house_id %></td>
+        <td><%= @houses.find(student.house_id).name %></td>
         <td><%= link_to 'Show', student %></td>
         <td><%= link_to 'Edit', edit_student_path(student) %></td>
         <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
